@@ -284,6 +284,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX, Maximize2, Minimize2 } from 'lucide-react';
+import videocrcidf from "../../assets/video/crcidf_(240p).mp4"
 
 export default function VideoSection() {
   const videoRef = useRef(null);
@@ -368,7 +369,7 @@ export default function VideoSection() {
           </div>
         ) : (
           <video ref={videoRef} autoPlay muted={isMuted} loop playsInline className="w-full h-full object-cover">
-            <source src="src/assets/video/crcidf (240p).mp4" type="video/mp4" />
+            <source src={videocrcidf} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         )}
