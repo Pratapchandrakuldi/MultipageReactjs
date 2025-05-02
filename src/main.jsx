@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
-import  appRouter  from './router/AppRouter';
+import  {appRouter}  from './router/appRouter';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -11,4 +11,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RouterProvider router={appRouter} />
     </ThemeProvider>
   </React.StrictMode>
-);
+)
